@@ -32,7 +32,7 @@ function ShopPage() {
           </select>
         </div>
         <div className='main-shop-products-container'>
-          <ProductCard imageId={} />
+          <ProductCard imageId={'1001'} />
         </div>
       </main>
     </div>

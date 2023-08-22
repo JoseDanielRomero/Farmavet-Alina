@@ -8,8 +8,8 @@ function ProductCard({ imageId }) {
         <img src={require(`../images/products/${imageId}.png`)} className='product-card-image' />
       </section>
       <section className='product-card-text-box'>
-        <h4 className='product-card-name'></h4>
-        <h5 className='product-card-price'></h5>
+        <h4 className='product-card-name'>Allmectin de 100 ml</h4>
+        <h5 className='product-card-price'>$7.00</h5>
       </section>
     </article>
   )

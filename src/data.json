@@ -1,0 +1,570 @@
+[
+  {
+    "id": 1001,
+    "name": "Allmectin 100ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario interno y externo.",
+    "iva": false,
+    "price": "7.00"
+  },
+  {
+    "id": 1002,
+    "name": "Allmectin 50ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario interno y externo.",
+    "iva": false,
+    "price": "6.00"
+  },
+  {
+    "id": 1004,
+    "name": "Amectin forte 50ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario inyectable indicado para el tratamiento y control de parasitosis internas y externas del ganado bovino.",
+    "iva": false,
+    "price": "9.90"
+  },
+  {
+    "id": 1005,
+    "name": "Amirvoss 20ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario externo.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1006,
+    "name": "Biorboss 20 ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario externo.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1007,
+    "name": "Doctam 10ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario de amplio espectro.",
+    "iva": false,
+    "price": "4.00"
+  },
+  {
+    "id": 1008,
+    "name": "Farbiomec 10ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario interno y externo-anabólico.",
+    "iva": false,
+    "price": "5.00"
+  },
+  {
+    "id": 1009,
+    "name": "Farbiopur",
+    "category": "desparasitantes",
+    "description": "Purgante para post parto.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1010,
+    "name": "Feben-gell tableta",
+    "category": "desparasitantes",
+    "description": "Antiparasitario interno de amplio espectro.",
+    "iva": false,
+    "price": "0.50"
+  },
+  {
+    "id": 1011,
+    "name": "Gusanero 250ml",
+    "category": "desparasitantes",
+    "description": "Spray Desinfectante, larvicida, cicatrizante, vermicida.",
+    "iva": false,
+    "price": "6.00"
+  },
+  {
+    "id": 1012,
+    "name": "Gusanero 500ml",
+    "category": "desparasitantes",
+    "description": "Spray Desinfectante, larvicida, cicatrizante, vermicida.",
+    "iva": false,
+    "price": "9.00"
+  },
+  {
+    "id": 1013,
+    "name": "Gusanero 60ml",
+    "category": "desparasitantes",
+    "description": "Spray Desinfectante, larvicida, cicatrizante, vermicida.",
+    "iva": false,
+    "price": "3.00"
+  },
+  {
+    "id": 1014,
+    "name": "Ivercur 10gr sobre",
+    "category": "desparasitantes",
+    "description": "Antiparasitario en polvo de amplio espectro con efecto residual.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1015,
+    "name": "Ivermectine Equina",
+    "category": "desparasitantes",
+    "description": "Antiparasitario de amplio espectro.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1016,
+    "name": "Legxus bolos 30ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario interno.",
+    "iva": false,
+    "price": "1.00"
+  },
+  {
+    "id": 1017,
+    "name": "Piperazina sobre",
+    "category": "desparasitantes",
+    "description": "Antiparasitario de amplio espectro.",
+    "iva": false,
+    "price": "1.00"
+  },
+  {
+    "id": 1018,
+    "name": "Piram pet tabletas",
+    "category": "desparasitantes",
+    "description": "Antiparasitario interno de amplio espectro.",
+    "iva": false,
+    "price": "1.00"
+  },
+  {
+    "id": 1019,
+    "name": "Prazpir 2ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario interno de amplio espectro.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1020,
+    "name": "Prazpir 5ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario interno de amplio espectro.",
+    "iva": false,
+    "price": "3.00"
+  },
+  {
+    "id": 1021,
+    "name": "Pulga Out Talco 100gr",
+    "category": "desparasitantes",
+    "description": "Antiparasitario externo en polvo.",
+    "iva": false,
+    "price": "4.00"
+  },
+  {
+    "id": 1022,
+    "name": "Pulga Out sobre",
+    "category": "desparasitantes",
+    "description": "Antiparasitario en polvo.",
+    "iva": false,
+    "price": "0.50"
+  },
+  {
+    "id": 1023,
+    "name": "Pulga Out Talco 60gr",
+    "category": "desparasitantes",
+    "description": "Antiparasitario externo en polvo.",
+    "iva": false,
+    "price": "3.00"
+  },
+  {
+    "id": 1024,
+    "name": "Pulga Out Jeringa 3ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario externo en polvo.",
+    "iva": false,
+    "price": "6.00"
+  },
+  {
+    "id": 1025,
+    "name": "Rosso D pasta 30ml",
+    "category": "desparasitantes",
+    "description": "Antiparasitario de amplio espectro.",
+    "iva": false,
+    "price": "8.50"
+  },
+  {
+    "id": 1026,
+    "name": "Triclorfon sobre",
+    "category": "desparasitantes",
+    "description": "Antiparasitario indicado en el tratamiento de parásitos gastrointestinales.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1027,
+    "name": "Apetovit gotero",
+    "category": "vitaminas",
+    "description": "Está indicado en caso de falta de apetito.",
+    "iva": false,
+    "price": "3.00"
+  },
+  {
+    "id": 1028,
+    "name": "Apetovit inyectable",
+    "category": "vitaminas",
+    "description": "Está indicado en caso de falta de apetito.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1029,
+    "name": "Balance Calcio",
+    "category": "vitaminas",
+    "description": "Está indicado en caninos con altas demandas de calcio y fósforo.",
+    "iva": false,
+    "price": "1.00"
+  },
+  {
+    "id": 1030,
+    "name": "Farbimangan 20ml",
+    "category": "vitaminas",
+    "description": "Está recomendado en: celos desordenados, trastornos en los ovarios, es coadyuvante en el tratamiento de infecciones, en deficiencias.",
+    "iva": false,
+    "price": "3.80"
+  },
+  {
+    "id": 1031,
+    "name": "Farbiovit cápsula 5ml (unidad)",
+    "category": "vitaminas",
+    "description": "Están indicados en estados carenciales, como restaurador general del equilibrio vitamínico para las funciones correctas del organismo.",
+    "iva": false,
+    "price": "0.50"
+  },
+  {
+    "id": 1032,
+    "name": "Farbiovit cápsula 5ml (caja)",
+    "category": "vitaminas",
+    "description": "Están indicados en estados carenciales, como restaurador general del equilibrio vitamínico para las funciones correctas del organismo.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1033,
+    "name": "Fortalizador sobre",
+    "category": "vitaminas",
+    "description": "Está indicado en caso de carencias de vitaminas, enfermedades infectocontagiosas y con el fin de evitar el estrés luego del tratamiento preventivo.",
+    "iva": false,
+    "price": "1.50"
+  },
+  {
+    "id": 1034,
+    "name": "Hidrat-90 suero oral",
+    "category": "vitaminas",
+    "description": "Está indicado para tratar la deshidratación ocasionada por cuadros de diarreas o vómitos.",
+    "iva": false,
+    "price": "2.50"
+  },
+  {
+    "id": 1035,
+    "name": "Hierro 100ml",
+    "category": "vitaminas",
+    "description": "Está indicado en el tratamiento de la anemia causada por deficiencias de hierro principalmente en lechones.",
+    "iva": false,
+    "price": "10.00"
+  },
+  {
+    "id": 1036,
+    "name": "Hierro 10ml",
+    "category": "vitaminas",
+    "description": "Está indicado en el tratamiento de la anemia causada por deficiencias de hierro principalmente en lechones.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1037,
+    "name": "Hierro 20ml",
+    "category": "vitaminas",
+    "description": "Está indicado en el tratamiento de la anemia causada por deficiencias de hierro principalmente en lechones.",
+    "iva": false,
+    "price": "4.50"
+  },
+  {
+    "id": 1038,
+    "name": "Hierro 50ml",
+    "category": "vitaminas",
+    "description": "Está indicado en el tratamiento de la anemia causada por deficiencias de hierro principalmente en lechones.",
+    "iva": false,
+    "price": "8.00"
+  },
+  {
+    "id": 1039,
+    "name": "Neuro B 100ml",
+    "category": "vitaminas",
+    "description": "Está indicado para tratar deficiencias de las vitaminas del complejo B e intoxicaciones.",
+    "iva": false,
+    "price": "8.50"
+  },
+  {
+    "id": 1040,
+    "name": "Neuro B 10ml",
+    "category": "vitaminas",
+    "description": "Está indicado para tratar deficiencias de las vitaminas del complejo B e intoxicaciones.",
+    "iva": false,
+    "price": "3.00"
+  },
+  {
+    "id": 1041,
+    "name": "Pretty frasco",
+    "category": "vitaminas",
+    "description": "Está indicado para tratar deficiencias de las vitaminas del complejo B.",
+    "iva": false,
+    "price": "7.50"
+  },
+  {
+    "id": 1042,
+    "name": "Sincirax inyectable",
+    "category": "vitaminas",
+    "description": "Está indicado para tratar deficiencias de las vitaminas del complejo B.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1043,
+    "name": "Sincirax oral",
+    "category": "vitaminas",
+    "description": "Está indicado para tratar deficiencias de las vitaminas del complejo B.",
+    "iva": false,
+    "price": "4.00"
+  },
+  {
+    "id": 1044,
+    "name": "Vitamina AD3E",
+    "category": "vitaminas",
+    "description": "Está indicado para la prevención y tratamiento de trastornos reproductivos, crecimiento retardado, alteraciones de la piel y mucosas.",
+    "iva": false,
+    "price": "7.00"
+  },
+  {
+    "id": 1045,
+    "name": "Agujas hipo",
+    "category": "otros",
+    "description": "Son utilizadas para inyectar sustancias o medicamentos al cuerpo.",
+    "iva": false,
+    "price": "1.00"
+  },
+  {
+    "id": 1046,
+    "name": "Bolfo sobre",
+    "category": "desparasitantes",
+    "description": "Es un polvo insecticida para perros y gatos ideal para el tratamiento y control de las infestaciones con pulgas, garrapatas y piojos.",
+    "iva": false,
+    "price": "1.80"
+  },
+  {
+    "id": 1047,
+    "name": "Iverjabon 70gr",
+    "category": "cuidado",
+    "description": "Está indicado como coadyuvante en el control de pulgas, garrapatas y piojos en caninos y felinos.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1048,
+    "name": "Ivershampoo cojín",
+    "category": "cuidado",
+    "description": "Está indicado en el control y tratamiento de pulgas, garrapatas y piojos en caninos y felinos.",
+    "iva": false,
+    "price": "1.50"
+  },
+  {
+    "id": 1049,
+    "name": "Ivershampoo frasco",
+    "category": "cuidado",
+    "description": "Está indicado en el control y tratamiento de pulgas, garrapatas y piojos en caninos y felinos.",
+    "iva": false,
+    "price": "5.00"
+  },
+  {
+    "id": 1050,
+    "name": "Jeringas dosificadoras",
+    "category": "otros",
+    "description": "Plástica, resistente y de fácil manejo.",
+    "iva": false,
+    "price": "20.00"
+  },
+  {
+    "id": 1051,
+    "name": "Flunix jeringa de 10ml",
+    "category": "antiinflamatorio",
+    "description": "Está indicado para la prevención y tratamiento de trastornos reproductivos, crecimiento retardado, alteraciones de la piel y mucosas.",
+    "iva": false,
+    "price": "5.00"
+  },
+  {
+    "id": 1052,
+    "name": "Flunix frasco de 50ml",
+    "category": "antiinflamatorio",
+    "description": "Está indicado para la prevención y tratamiento de trastornos reproductivos, crecimiento retardado, alteraciones de la piel y mucosas.",
+    "iva": false,
+    "price": "11.50"
+  },
+  {
+    "id": 1053,
+    "name": "Ubresan crema 100gr",
+    "category": "antiinflamatorio",
+    "description": "Es un ungüento desinfectante, desinflamante y lubricante para el tratamiento de afecciones de las ubres o cualquier parte del cuerpo del animal.",
+    "iva": false,
+    "price": "2.50"
+  },
+  {
+    "id": 1054,
+    "name": "Yodosil",
+    "category": "antiinflamatorio",
+    "description": "Se lo usa como germicida, antiséptico y desinfectante, es usado en forma de tintura para desinfectar heridas.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1055,
+    "name": "Ratex sobre 30gr",
+    "category": "otros",
+    "description": "Se lo usa como germicida, antiséptico y desinfectante, es usado en forma de tintura para desinfectar heridas.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1056,
+    "name": "Celo in 10ml",
+    "category": "otros",
+    "description": "Está indicado para corregir los desórdenes funcionales del sistema reproductor femenino.",
+    "iva": false,
+    "price": "5.00"
+  },
+  {
+    "id": 1057,
+    "name": "Celo in dosis 2ml",
+    "category": "otros",
+    "description": "Está indicado para corregir los desórdenes funcionales del sistema reproductor femenino.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1058,
+    "name": "Celostop dosis 1ml",
+    "category": "otros",
+    "description": "Progestágeno sintético que suprime el estro en caninos y felinos hembra que se encuentren en etapa de anestro.",
+    "iva": false,
+    "price": "5.00"
+  },
+  {
+    "id": 1059,
+    "name": "Farbioboldegan 10ml",
+    "category": "otros",
+    "description": "Esteroide anabólico de acción prolongada, utilizando en la consecución de aumento de peso corporal.",
+    "iva": false,
+    "price": "5.00"
+  },
+  {
+    "id": 1060,
+    "name": "Oxitocina 10ml",
+    "category": "antibiotico",
+    "description": "Estimula las contracciones uterinas en el parto.",
+    "iva": false,
+    "price": "4.00"
+  },
+  {
+    "id": 1061,
+    "name": "Azitrox gotero 10ml",
+    "category": "antibiotico",
+    "description": "Está indicado para el tratamiento y control de infecciones respiratorias en aves",
+    "iva": false,
+    "price": "2.50"
+  },
+  {
+    "id": 1062,
+    "name": "Bactrivet 100gr",
+    "category": "antibiotico",
+    "description": "Está indicado para infecciones de las vías respiratorias: inferiores y superiores, bronquitis, neumonía.",
+    "iva": false,
+    "price": "5.00"
+  },
+  {
+    "id": 1063,
+    "name": "Bactrivet 10ml inyectable",
+    "category": "antibiotico",
+    "description": "Está indicado para infecciones de las vías respiratorias: inferiores y superiores, bronquitis, neumonía.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1064,
+    "name": "Bactrivet 20gr",
+    "category": "antibiotico",
+    "description": "Está indicado para infecciones de las vías respiratorias: inferiores y superiores, bronquitis, neumonía.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1065,
+    "name": "Bactrivet suspension",
+    "category": "antibiotico",
+    "description": "Está indicado para infecciones de las vías respiratorias: inferiores y superiores, bronquitis, neumonía.",
+    "iva": false,
+    "price": "7.00"
+  },
+  {
+    "id": 1066,
+    "name": "Bronkoxt 50ml",
+    "category": "antibiotico",
+    "description": "Es un expectorante mucolítico de acción directa.",
+    "iva": false,
+    "price": "5.00"
+  },
+  {
+    "id": 1067,
+    "name": "Carprocox cápsulas",
+    "category": "antiinflamatorio",
+    "description": "Inhibe de manera selectiva la ciclooxigenasa-2, responsable de la inflamación y del dolor.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1068,
+    "name": "Clinzin tabletas",
+    "category": "antibiotico",
+    "description": "Indicado en el tratamiento de infecciones periodontales, de tejidos blandos (abscesos, heridas infectadas) y osteomielitis.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1069,
+    "name": "Doxim Pet tabletas",
+    "category": "antibiotico",
+    "description": "Antibiótico de amplio espectro indicado en el tratamiento de enfermedades infecciosas locales o sistémicas.",
+    "iva": false,
+    "price": "1.00"
+  },
+  {
+    "id": 1070,
+    "name": "Ebrol L.A. inyectable",
+    "category": "antibiotico",
+    "description": "Indicado en bovinos, equinos, porcinos, ovinos, caninos y felinos para el control y tratamiento de todo tipo de infecciones.",
+    "iva": false,
+    "price": "5.00"
+  },
+  {
+    "id": 1071,
+    "name": "Enflox 50 tableta",
+    "category": "antibiotico",
+    "description": "Antibacteriano de amplio espectro.",
+    "iva": false,
+    "price": "0.50"
+  },
+  {
+    "id": 1072,
+    "name": "Enflox 5% inyectable 10ml",
+    "category": "antibiotico",
+    "description": "Está indicado para el control y tratamiento de salmonelosis, infecciones respiratorias, digestivas, urinarias y mastitis.",
+    "iva": false,
+    "price": "4.00"
+  }
+]
