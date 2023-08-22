@@ -5,3 +5,42 @@
     flex-direction: column;
     align-items: stretch;
 }
+
+.main-shop {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0 6%;
+}
+
+.main-shop-selectbox-container {
+    height: 30px;
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-shop-selectbox-form {
+    outline: none;
+    height: 100%;
+    width: 25%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+}
+
+.main-shop-products-container {
+    height: auto;
+    width: 100%;
+    display: grid; 
+    grid-auto-rows: 240px; 
+    grid-template-columns: 23% 23% 23% 23%; 
+    gap: 10px 0; 
+    justify-content: space-between;
+}
