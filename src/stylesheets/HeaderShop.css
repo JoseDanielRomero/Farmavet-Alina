@@ -1,0 +1,27 @@
+.header-shop {
+    height: 25vh;
+    width: 100%;
+    background-color: #ffc600;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-shop-title {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+    line-height: 2.2rem;
+    text-align: center;
+    text-shadow: 2px 2px #1d252ce5;
+}
+
+.header-shop-image {
+    max-height: 70%;
+}

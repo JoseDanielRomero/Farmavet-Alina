@@ -14,10 +14,22 @@ function Navbar() {
       <div className='nav-items-box'>
         <ul className='nav-items-list'>
           <li className='shop-box'>
-            <h4 className='nav-item shop'>Tienda<img src={arrowIcon} className='arrow-icon' /></h4>
+            <Link to='/tienda'><h4 className='nav-item shop'>Tienda<img src={arrowIcon} className='arrow-icon' /></h4></Link>
             <div className='nav-item-shop-box'>
               <ul className='nav-items-list-shop'>
-              
+              <li><Link to='/'><h4 className='nav-item mini'>Desparasitantes</h4></Link></li>
+              <hr className='divider'></hr>
+              <li><Link to='/'><h4 className='nav-item mini'>Antibióticos</h4></Link></li>
+              <hr className='divider'></hr>
+              <li><Link to='/'><h4 className='nav-item mini'>Analgésico</h4></Link></li>
+              <hr className='divider'></hr>
+              <li><Link to='/'><h4 className='nav-item mini'>Antiinflamatorio</h4></Link></li>
+              <hr className='divider'></hr>
+              <li><Link to='/'><h4 className='nav-item mini'>Vacunas</h4></Link></li>
+              <hr className='divider'></hr>
+              <li><Link to='/'><h4 className='nav-item mini'>Diuréticos</h4></Link></li>
+              <hr className='divider'></hr>
+              <li><Link to='/'><h4 className='nav-item mini'>Oftálmicos</h4></Link></li>
               </ul>
             </div>
           </li>
@@ -25,9 +37,9 @@ function Navbar() {
           <li><Link to='/'><h4 className='nav-item'>Nosotros</h4></Link></li>
         </ul>
       </div>
-      <div className='cart-box'>
+      <button className='cart-box'>
         <img src={cartIcon} className='cart-icon' />
-      </div>
+      </button>
     </nav>
   )
 }
