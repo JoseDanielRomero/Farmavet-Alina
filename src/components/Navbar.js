@@ -21,15 +21,15 @@ function Navbar() {
               <hr className='divider'></hr>
               <li><Link to='/'><h4 className='nav-item mini'>Antibióticos</h4></Link></li>
               <hr className='divider'></hr>
-              <li><Link to='/'><h4 className='nav-item mini'>Analgésico</h4></Link></li>
+              <li><Link to='/'><h4 className='nav-item mini'>Vitaminas</h4></Link></li>
               <hr className='divider'></hr>
               <li><Link to='/'><h4 className='nav-item mini'>Antiinflamatorio</h4></Link></li>
               <hr className='divider'></hr>
               <li><Link to='/'><h4 className='nav-item mini'>Vacunas</h4></Link></li>
               <hr className='divider'></hr>
-              <li><Link to='/'><h4 className='nav-item mini'>Diuréticos</h4></Link></li>
+              <li><Link to='/'><h4 className='nav-item mini'>Alimentación</h4></Link></li>
               <hr className='divider'></hr>
-              <li><Link to='/'><h4 className='nav-item mini'>Oftálmicos</h4></Link></li>
+              <li><Link to='/'><h4 className='nav-item mini'>Cuidado Animal</h4></Link></li>
               </ul>
             </div>
           </li>

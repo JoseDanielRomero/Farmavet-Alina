@@ -568,14 +568,6 @@
     "price": "4.00"
   },
   {
-    "id": 1072,
-    "name": "Enflox 5% inyectable 10ml",
-    "category": "antibiotico",
-    "description": "Está indicado para el control y tratamiento de salmonelosis, infecciones respiratorias, digestivas, urinarias y mastitis.",
-    "iva": false,
-    "price": "4.00"
-  },
-  {
     "id": 1073,
     "name": "Enrofin Inpel 50ml",
     "category": "antibiotico",
