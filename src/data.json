@@ -566,5 +566,237 @@
     "description": "Está indicado para el control y tratamiento de salmonelosis, infecciones respiratorias, digestivas, urinarias y mastitis.",
     "iva": false,
     "price": "4.00"
+  },
+  {
+    "id": 1072,
+    "name": "Enflox 5% inyectable 10ml",
+    "category": "antibiotico",
+    "description": "Está indicado para el control y tratamiento de salmonelosis, infecciones respiratorias, digestivas, urinarias y mastitis.",
+    "iva": false,
+    "price": "4.00"
+  },
+  {
+    "id": 1073,
+    "name": "Enrofin Inpel 50ml",
+    "category": "antibiotico",
+    "description": "Para el control y tratamiento de infecciones cutáneas, de tejidos blandos, infecciones del tracto urinario, etc.",
+    "iva": false,
+    "price": "6.00"
+  },
+  {
+    "id": 1074,
+    "name": "Falex cápsula",
+    "category": "antibiotico",
+    "description": "Antibacteriano bactericida de amplio espectro del grupo de las cefalosporinas de primera generación.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1075,
+    "name": "Farbioderm crema",
+    "category": "antibiotico",
+    "description": "Es una crema bactericida, fungicida, antiinflamatoria y antiprurítica que actúa en las afecciones de la piel causadas por hongos, y bacterias.",
+    "iva": false,
+    "price": "6.00"
+  },
+  {
+    "id": 1076,
+    "name": "Florfox Miscella cápsulas",
+    "category": "antibiotico",
+    "description": "Está indicado en el tratamiento de infecciones causadas por bacterias Gram positivas y Gram negativas en aves, caprinos, ovinos y caninos.",
+    "iva": false,
+    "price": "0.50"
+  },
+  {
+    "id": 1077,
+    "name": "Florfox gotero 10ml",
+    "category": "antibiotico",
+    "description": "Está indicado en el tratamiento de infecciones causadas por bacterias Gram positivas y Gram negativas en aves, caprinos, ovinos y caninos.",
+    "iva": false,
+    "price": "2.50"
+  },
+  {
+    "id": 1078,
+    "name": "Florfox gotero 50ml",
+    "category": "antibiotico",
+    "description": "Está indicado en el tratamiento de infecciones causadas por bacterias Gram positivas y Gram negativas en aves, caprinos, ovinos y caninos.",
+    "iva": false,
+    "price": "6.00"
+  },
+  {
+    "id": 1079,
+    "name": "Gentax 10ml",
+    "category": "antibiotico",
+    "description": "Es un antibiótico en solución oftálmica indicada para el tratamiento de bacterias en el ojo.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1080,
+    "name": "Kao-Peg sobre",
+    "category": "antibiotico",
+    "description": "Está indicado en el tratamiento y control de diarreas e infecciones gastrointestinales causadas por bacterias.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1081,
+    "name": "Mastibroke Lactancia",
+    "category": "antibiotico",
+    "description": "Está indicado para el tratamiento de mastitis clínica y subclínica durante el período de lactación.",
+    "iva": false,
+    "price": "3.00"
+  },
+  {
+    "id": 1082,
+    "name": "Mastibroke Secado",
+    "category": "antibiotico",
+    "description": "Está indicado para la prevención y tratamiento de la mastitis causadas por Staphylococcus spp.",
+    "iva": false,
+    "price": "3.00"
+  },
+  {
+    "id": 1098,
+    "name": "Cerdobac 25ml",
+    "category": "vacuna",
+    "description": "Está indicada para la prevención y el control de la septicemia hemorrágica, pasteurelosis, colibacilosis y salmonelosis en porcinos.",
+    "iva": false,
+    "price": "4.50"
+  },
+  {
+    "id": 1099,
+    "name": "Mal bobo",
+    "category": "vacuna",
+    "description": "Está indicada para el control de la neumoenteritis en terneros recién nacidos y para la creación de anticuerpos maternos.",
+    "iva": false,
+    "price": "1.50"
+  },
+  {
+    "id": 1100,
+    "name": "Newcastle de 100 dosis",
+    "category": "vacuna",
+    "description": "Vacuna para la prevención de la enfermedad de Newcastle.",
+    "iva": false,
+    "price": "4.00"
+  },
+  {
+    "id": 1101,
+    "name": "Neumopig",
+    "category": "vacuna",
+    "description": "Está indicada para la prevención de la neumonía en cerdos, ocasionada por Mycoplasma hyopneumoniae.",
+    "iva": false,
+    "price": "9.00"
+  },
+  {
+    "id": 1102,
+    "name": "Newcastle de 50 dosis",
+    "category": "vacuna",
+    "description": "Vacuna para la prevención de la enfermedad de Newcastle.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1103,
+    "name": "Newcastle Bronquitis de 50 dosis",
+    "category": "vacuna",
+    "description": "Vacuna para la prevención de la enfermedad de Newcastle.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1104,
+    "name": "Newcastle de 25 dosis",
+    "category": "vacuna",
+    "description": "Vacuna para la prevención de la enfermedad de Newcastle.",
+    "iva": false,
+    "price": "3.00"
+  },
+  {
+    "id": 1112,
+    "name": "Pro-can libra raza grande",
+    "category": "alimentacion",
+    "description": "Alimento completo y balanceado con sabor a pollo, carne y cereales diseñado para perros de raza grande.",
+    "iva": true,
+    "price": "1.34"
+  },
+  {
+    "id": 1113,
+    "name": "Pro-can 2kg raza grande",
+    "category": "alimentacion",
+    "description": "Alimento completo y balanceado con sabor a pollo, carne y cereales diseñado para perros de raza grande.",
+    "iva": true,
+    "price": "4.46"
+  },
+  {
+    "id": 1114,
+    "name": "Pro-can 2kg raza mediana",
+    "category": "alimentacion",
+    "description": "Alimento balanceado y completo receta original de pollo, para perros adultos de raza mediana.",
+    "iva": true,
+    "price": "5.36"
+  },
+  {
+    "id": 1115,
+    "name": "Pro-can libra raza mediana",
+    "category": "alimentacion",
+    "description": "Alimento balanceado y completo receta original de pollo, para perros adultos de raza mediana.",
+    "iva": true,
+    "price": "1.34"
+  },
+  {
+    "id": 1116,
+    "name": "Pro-can libra raza pequeña",
+    "category": "alimentacion",
+    "description": "Alimento balanceado y completo sabor a pollo, carne y vegetales para perros adultos de raza pequeña.",
+    "iva": true,
+    "price": "1.56"
+  },
+  {
+    "id": 1117,
+    "name": "Pro-cat libra raza pequeña",
+    "category": "alimentacion",
+    "description": "Alimento completo y balanceado que le ofrece a tu minino un óptimo nivel de nutrición.",
+    "iva": true,
+    "price": "2.23"
+  },
+  {
+    "id": 1127,
+    "name": "Shampoo Cariñoso 250ml",
+    "category": "cuidado",
+    "description": "Shampoo, rinse, acondicionador perfumado para perros, pelaje, sedoso y brillante.",
+    "iva": false,
+    "price": "7.00"
+  },
+  {
+    "id": 1128,
+    "name": "Shampoo Cariñoso 60ml",
+    "category": "cuidado",
+    "description": "Shampoo, rinse, acondicionador perfumado para perros, pelaje, sedoso y brillante.",
+    "iva": false,
+    "price": "2.00"
+  },
+  {
+    "id": 1129,
+    "name": "Talco Cariñoso frasco",
+    "category": "cuidado",
+    "description": "Talco medicado.",
+    "iva": false,
+    "price": "3.50"
+  },
+  {
+    "id": 1130,
+    "name": "Talco Cariñoso sobre",
+    "category": "cuidado",
+    "description": "Talco medicado.",
+    "iva": false,
+    "price": "1.00"
+  },
+  {
+    "id": 1131,
+    "name": "Asuntol jabón",
+    "category": "cuidado",
+    "description": "Está indicado para la limpieza, tratamiento y protección del perro contra pulgas.",
+    "iva": false,
+    "price": "5.00"
   }
 ]
