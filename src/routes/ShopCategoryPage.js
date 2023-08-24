@@ -11,18 +11,44 @@ import Footer from '../components/Footer';
 import cartIcon from '../images/shopping-cart-2.png'
 import plusIcon from '../images/plus.png'
 
-function ShopPage() {
+function ShopCategoryPage({ category }) {
+
+  const firstLetter = category.charAt(0)
+  const firstLetterCap = firstLetter.toUpperCase()
+  const remainingLetters = category.slice(1)
+  const capitalizedWord = firstLetterCap + remainingLetters
 
   const options = [
     {value: 'default', text: 'Orden por defecto'},
     {value: 'low', text: 'Ordenar por precio: bajo a alto'},
     {value: 'high', text: 'Ordenar por precio: alto a bajo'}
   ]
-
+  
   const [actualSortOption, setActualSortOption] = useState(options[0].value)
+
+  const copyData = [...data]
+  const categorizedData = copyData.filter(element => element.category === category)
 
   const [database, setDatabase] = useState([])
   const [currentPage, setCurrentPage] = useState(0)
+
+  useEffect(()=>{
+    const copyData = [...categorizedData]
+
+    switch (actualSortOption) {
+      case 'default':
+        break;
+      case 'low':
+        copyData.sort((x, y) => x.price - y.price)
+        break;
+      case 'high':
+        copyData.sort((x, y) => x.price - y.price).reverse()
+        break;
+    }
+
+    setDatabase(copyData)
+
+  },[actualSortOption])
 
   const filteredDatabase = () => {
     return database.slice(currentPage, currentPage + 12)
@@ -44,34 +70,16 @@ function ShopPage() {
     setActualSortOption(event.target.value)
   }
 
-  useEffect(()=>{
-    const copyData = [...data]
-
-    switch (actualSortOption) {
-      case 'default':
-        break;
-      case 'low':
-        copyData.sort((x, y) => x.price - y.price)
-        break;
-      case 'high':
-        copyData.sort((x, y) => x.price - y.price).reverse()
-        break;
-    }
-
-    setDatabase(copyData)
-
-  },[actualSortOption])
-
   const handlePrevButtonClass = currentPage == 0 ? 'page-button disabled' : 'page-button'
   const handleNextButtonClass = currentPage + 12 > database.length ? 'page-button disabled' : 'page-button'
-  
+
   const showingFrom = currentPage + 1
   const showingTo = currentPage + 12 > database.length ? database.length : currentPage + 12
 
   return (
-    <div className='ShopPage'>
+    <div className='ShopCategoryPage'>
       <Navbar />
-      <HeaderShop title={'Tienda'} />
+      <HeaderShop title={capitalizedWord} />
       <main className='main-shop'>
         <div className='main-shop-selectbox-container'>
           <p className='results-show-adviser'>Mostrando {showingFrom}-{showingTo} de {database.length} resultados</p>
@@ -116,4 +124,4 @@ function ShopPage() {
   )
 }
 
-export default ShopPage;
+export default ShopCategoryPage;

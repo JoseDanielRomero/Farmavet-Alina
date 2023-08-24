@@ -1,6 +1,5 @@
 import '../stylesheets/ProductCard.css'
 
-
 function ProductCard({ imageId, name, price }) {
 
   return (
