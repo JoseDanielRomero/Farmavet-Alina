@@ -10,6 +10,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #cbcbcb;
 }
 
 .logo-box {
@@ -107,6 +108,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid #cbcbcb;
 }
 
 .shop-box:hover .nav-item-shop-box {
