@@ -42,6 +42,7 @@ function ShopPage() {
 
   const handleChangeSelectbox = (event) => {
     setActualSortOption(event.target.value)
+    setCurrentPage(0)
   }
 
   useEffect(()=>{

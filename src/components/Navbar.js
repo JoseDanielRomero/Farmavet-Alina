@@ -19,17 +19,17 @@ function Navbar() {
               <ul className='nav-items-list-shop'>
               <li><Link to='/desparasitantes'><h4 className='nav-item mini'>Desparasitantes</h4></Link></li>
               <hr className='divider'></hr>
-              <li><Link to='/'><h4 className='nav-item mini'>Antibióticos</h4></Link></li>
+              <li><Link to='/antibioticos'><h4 className='nav-item mini'>Antibióticos</h4></Link></li>
               <hr className='divider'></hr>
-              <li><Link to='/'><h4 className='nav-item mini'>Vitaminas</h4></Link></li>
+              <li><Link to='/vitaminas'><h4 className='nav-item mini'>Vitaminas</h4></Link></li>
               <hr className='divider'></hr>
-              <li><Link to='/'><h4 className='nav-item mini'>Antiinflamatorio</h4></Link></li>
+              <li><Link to='/antiinflamatorio'><h4 className='nav-item mini'>Antiinflamatorio</h4></Link></li>
               <hr className='divider'></hr>
-              <li><Link to='/'><h4 className='nav-item mini'>Vacunas</h4></Link></li>
+              <li><Link to='/vacunas'><h4 className='nav-item mini'>Vacunas</h4></Link></li>
               <hr className='divider'></hr>
-              <li><Link to='/'><h4 className='nav-item mini'>Alimentación</h4></Link></li>
+              <li><Link to='/alimentacion'><h4 className='nav-item mini'>Alimentación</h4></Link></li>
               <hr className='divider'></hr>
-              <li><Link to='/'><h4 className='nav-item mini'>Cuidado Animal</h4></Link></li>
+              <li><Link to='/cuidado-animal'><h4 className='nav-item mini'>Cuidado Animal</h4></Link></li>
               </ul>
             </div>
           </li>

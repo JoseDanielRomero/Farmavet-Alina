@@ -4,7 +4,7 @@ import HeaderShop from '../components/HeaderShop';
 import Navbar from '../components/Navbar';
 import ProductCard from '../components/ProductCard';
 import '../stylesheets/ShopPage.css'
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import leftArrow from '../images/left-arrow.png'
 import rightArrow from '../images/right-arrow.png'
 import Footer from '../components/Footer';
@@ -12,6 +12,10 @@ import cartIcon from '../images/shopping-cart-2.png'
 import plusIcon from '../images/plus.png'
 
 function ShopCategoryPage({ category }) {
+
+  useEffect(()=>{
+    setCurrentPage(0)
+  },[category])
 
   const firstLetter = category.charAt(0)
   const firstLetterCap = firstLetter.toUpperCase()
@@ -25,7 +29,7 @@ function ShopCategoryPage({ category }) {
   ]
   
   const [actualSortOption, setActualSortOption] = useState(options[0].value)
-
+  
   const copyData = [...data]
   const categorizedData = copyData.filter(element => element.category === category)
 
@@ -48,7 +52,7 @@ function ShopCategoryPage({ category }) {
 
     setDatabase(copyData)
 
-  },[actualSortOption])
+  },[actualSortOption, category])
 
   const filteredDatabase = () => {
     return database.slice(currentPage, currentPage + 12)
@@ -68,6 +72,7 @@ function ShopCategoryPage({ category }) {
 
   const handleChangeSelectbox = (event) => {
     setActualSortOption(event.target.value)
+    setCurrentPage(0)
   }
 
   const handlePrevButtonClass = currentPage == 0 ? 'page-button disabled' : 'page-button'
@@ -75,6 +80,8 @@ function ShopCategoryPage({ category }) {
 
   const showingFrom = currentPage + 1
   const showingTo = currentPage + 12 > database.length ? database.length : currentPage + 12
+
+  console.log(database)
 
   return (
     <div className='ShopCategoryPage'>
