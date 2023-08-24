@@ -37,6 +37,7 @@
     width: 55%;
     background-color: rgb(241, 241, 241);
     padding: 20px 2%;
+    overflow: scroll;
 }
 
 .main-product-page-title {

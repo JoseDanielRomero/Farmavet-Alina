@@ -5,6 +5,7 @@ import '../stylesheets/ProductPage.css'
 import { useState } from 'react';
 import cartIcon from '../images/shopping-cart-2.png'
 import plusIcon from '../images/plus.png'
+import Footer from '../components/Footer';
 
 function ProductPage() {
 
@@ -62,6 +63,7 @@ function ProductPage() {
           </section>
         </article>
       </main>
+      <Footer />
     </div>
   )
 }

@@ -7,6 +7,9 @@ import '../stylesheets/ShopPage.css'
 import { Link } from 'react-router-dom';
 import leftArrow from '../images/left-arrow.png'
 import rightArrow from '../images/right-arrow.png'
+import Footer from '../components/Footer';
+import cartIcon from '../images/shopping-cart-2.png'
+import plusIcon from '../images/plus.png'
 
 function ShopPage() {
 
@@ -77,13 +80,20 @@ function ShopPage() {
           {filteredDatabase().map(product => {
             const linkTo = '/producto/' + product.id
             return (
-              <Link to={linkTo} key={product.id}>
-                <ProductCard 
-                  imageId={product.id}
-                  name={product.name}
-                  price={product.price}
-                />
-              </Link>
+              <div key={product.id}>
+                <Link to={linkTo}>
+                  <ProductCard 
+                    imageId={product.id}
+                    name={product.name}
+                    price={product.price}
+                  />
+                </Link>
+                <button className='product-card-button' >
+                  <img src={cartIcon} className='product-card-cart-icon' />
+                  <img src={plusIcon} className='product-card-plus-icon' />
+                </button>
+              </div>
+              
           )})}
         </div>
         <div className='main-shop-page-container'>
@@ -95,8 +105,7 @@ function ShopPage() {
           </button>
         </div>
       </main>
-      <footer className='footer'>
-      </footer>
+      <Footer />
     </div>
   )
 }

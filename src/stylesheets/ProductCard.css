@@ -31,7 +31,7 @@
     background-color: rgb(241, 241, 241);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-    padding: 3% 5%;
+    padding: 10px 5%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -49,6 +49,15 @@
     color: #272727;
     text-align: left;
     line-height: 1.3rem;
+}
+
+.product-card-lower-box {
+    height: 22px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .product-card-price {

@@ -7,10 +7,10 @@ import cartIcon from '../images/shopping-cart.png'
 function Navbar() {
   return (
     <nav className='navbar-container'>
-      <div className='logo-box'>
+      <Link to='/' className='logo-box'>
         <img className='logo-image' src={logo} />
         <h3 className='logo-text'>Farmacia veterinaria Alina</h3>
-      </div>
+      </Link>
       <div className='nav-items-box'>
         <ul className='nav-items-list'>
           <li className='shop-box'>

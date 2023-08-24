@@ -1,0 +1,30 @@
+.Footer {
+    height: 150px;
+    width: 100%;
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 0 6%;
+    padding-top: 2%;
+}
+
+.footer-logo-slogan {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    color: white;
+}
+
+.footer-logo-rights {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    color: rgb(128, 128, 128);
+}

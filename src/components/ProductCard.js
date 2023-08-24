@@ -1,5 +1,6 @@
 import '../stylesheets/ProductCard.css'
 
+
 function ProductCard({ imageId, name, price }) {
 
   return (
@@ -9,7 +10,9 @@ function ProductCard({ imageId, name, price }) {
       </section>
       <section className='product-card-text-box'>
         <h4 className='product-card-name'>{name}</h4>
-        <h5 className='product-card-price'>${price}</h5>
+        <div className='product-card-lower-box'>
+          <h5 className='product-card-price'>${price}</h5>
+        </div>
       </section>
     </article>
   )
