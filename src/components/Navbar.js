@@ -8,7 +8,7 @@ import { CartContext } from '../App';
 
 function Navbar() {
 
-  const { cartState, setCartState } = useContext(CartContext)
+  const { cartState } = useContext(CartContext)
   const [cartLength, setCartLength] = useState([])
 
   useEffect(()=>{
@@ -18,11 +18,13 @@ function Navbar() {
 
   },[cartState])
 
+  const hanldeClassCounter = cartLength.length === 0 ? 'cart-counter hidden' : 'cart-counter show'
+
   return (
     <nav className='navbar-container'>
       <Link to='/' className='logo-box'>
         <img className='logo-image' src={logo} />
-        <h3 className='logo-text'>Farmacia veterinaria Alina</h3>
+        <h3 className='logo-text'>Farmacia Veterinaria Alina</h3>
       </Link>
       <div className='nav-items-box'>
         <ul className='nav-items-list'>
@@ -51,7 +53,7 @@ function Navbar() {
         </ul>
       </div>
       <button className='cart-box'>
-        <div className='cart-counter'>{cartLength.length}</div>
+        <div className={hanldeClassCounter}>{cartLength.length}</div>
         <img src={cartIcon} className='cart-icon' />
       </button>
     </nav>

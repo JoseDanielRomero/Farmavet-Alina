@@ -151,7 +151,6 @@
 .cart-counter {
     height: 18px;
     width: 18px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -166,6 +165,14 @@
     margin-left: 22px;
     margin-top: -5px;
     z-index: 900;
+}
+
+.cart-counter.hidden {
+    display: none;
+}
+
+.cart-counter.show {
+    display: flex;
 }
 
 .divider {

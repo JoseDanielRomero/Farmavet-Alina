@@ -11,7 +11,7 @@ export const CartContext = createContext([])
 function App() {
 
   const cartList = JSON.parse(localStorage.getItem('cart')) || []
-  const [cartState, setCartState] = useState(cartList)
+  const [cartState, setCartState] = useState([cartList])
 
   return (
     <CartContext.Provider value={{ cartState, setCartState }}>
