@@ -3,8 +3,21 @@ import logo from '../images/logo-simple.png'
 import { Link } from 'react-router-dom';
 import arrowIcon from '../images/arrow-down.png'
 import cartIcon from '../images/shopping-cart.png'
+import { useContext, useEffect, useState } from 'react';
+import { CartContext } from '../App';
 
 function Navbar() {
+
+  const { cartState, setCartState } = useContext(CartContext)
+  const [cartLength, setCartLength] = useState([])
+
+  useEffect(()=>{
+
+    const cartList = JSON.parse(localStorage.getItem('cart')) || []
+    setCartLength(cartList)
+
+  },[cartState])
+
   return (
     <nav className='navbar-container'>
       <Link to='/' className='logo-box'>
@@ -38,6 +51,7 @@ function Navbar() {
         </ul>
       </div>
       <button className='cart-box'>
+        <div className='cart-counter'>{cartLength.length}</div>
         <img src={cartIcon} className='cart-icon' />
       </button>
     </nav>

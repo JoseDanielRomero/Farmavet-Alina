@@ -2,13 +2,15 @@ import data from '../data.json';
 import { useParams } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import '../stylesheets/ProductPage.css'
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import cartIcon from '../images/shopping-cart-2.png'
 import plusIcon from '../images/plus.png'
 import Footer from '../components/Footer';
+import { CartContext } from '../App';
 
 function ProductPage() {
 
+  const { cartState, setCartState } = useContext(CartContext)
   const { productId } = useParams()
   const [quantity, setQuantity] = useState(1)
 
@@ -27,6 +29,24 @@ function ProductPage() {
 
   const handleSubmitButton = (event) => {
     event.preventDefault()
+    const cartList = JSON.parse(localStorage.getItem('cart')) || []
+    const copyCart = [...cartList]
+    const copyProduct = {...actualProduct}
+    const findIdx = copyCart.findIndex(element => element.id === actualProduct.id)
+
+    if (findIdx === -1) {
+      copyProduct.quantity = 1
+      copyCart.push(copyProduct)
+      localStorage.setItem('cart', JSON.stringify(copyCart))
+    } else {
+      const actualQuantity = copyCart[findIdx].quantity
+      if ((actualQuantity + Number(quantity)) <= 5 ) {
+        copyCart[findIdx].quantity = copyCart[findIdx].quantity + Number(quantity)
+      }
+      localStorage.setItem('cart', JSON.stringify(copyCart))
+    }
+    setQuantity(1)
+    setCartState(cartList)
   }
 
   return (

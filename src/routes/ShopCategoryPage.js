@@ -1,5 +1,5 @@
 import data from '../data.json';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import HeaderShop from '../components/HeaderShop';
 import Navbar from '../components/Navbar';
 import ProductCard from '../components/ProductCard';
@@ -10,11 +10,15 @@ import rightArrow from '../images/right-arrow.png'
 import Footer from '../components/Footer';
 import cartIcon from '../images/shopping-cart-2.png'
 import plusIcon from '../images/plus.png'
+import { CartContext } from '../App';
 
 function ShopCategoryPage({ category }) {
 
+  const { cartState, setCartState } = useContext(CartContext)
+
   useEffect(()=>{
     setCurrentPage(0)
+    setActualSortOption(options[0].value)
   },[category])
 
   const firstLetter = category.charAt(0)
@@ -81,7 +85,26 @@ function ShopCategoryPage({ category }) {
   const showingFrom = currentPage + 1
   const showingTo = currentPage + 12 > database.length ? database.length : currentPage + 12
 
-  console.log(database)
+  const handleClickAddCart = (productObj) => {
+
+    const cartList = JSON.parse(localStorage.getItem('cart')) || []
+    const copyCart = [...cartList]
+    const copyProduct = {...productObj}
+    const findIdx = copyCart.findIndex(element => element.id === productObj.id)
+
+    if (findIdx === -1) {
+      copyProduct.quantity = 1
+      copyCart.push(copyProduct)
+      localStorage.setItem('cart', JSON.stringify(copyCart))
+    } else {
+      const actualQuantity = copyCart[findIdx].quantity
+      if (actualQuantity < 5) {
+        copyCart[findIdx].quantity = copyCart[findIdx].quantity + 1
+      }
+      localStorage.setItem('cart', JSON.stringify(copyCart))
+    }
+    setCartState(cartList)
+  }
 
   return (
     <div className='ShopCategoryPage'>
@@ -110,7 +133,7 @@ function ShopCategoryPage({ category }) {
                     price={product.price}
                   />
                 </Link>
-                <button className='product-card-button' >
+                <button className='product-card-button' onClick={()=>handleClickAddCart(product)} >
                   <img src={cartIcon} className='product-card-cart-icon' />
                   <img src={plusIcon} className='product-card-plus-icon' />
                 </button>

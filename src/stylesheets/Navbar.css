@@ -138,13 +138,34 @@
     padding: 0;
 }
 
-.cart-box:hover {
+.cart-icon:hover {
     cursor: pointer;
     filter: invert(19%) sepia(92%) saturate(2394%) hue-rotate(214deg) brightness(66%) contrast(98%);
 }
 
 .cart-icon {
-    height: 27px;
+    height: 30px;
+    z-index: 800;
+}
+
+.cart-counter {
+    height: 18px;
+    width: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: #0b3fb3;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: .6rem;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 22px;
+    margin-top: -5px;
+    z-index: 900;
 }
 
 .divider {

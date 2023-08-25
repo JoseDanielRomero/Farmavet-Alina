@@ -362,7 +362,7 @@
   {
     "id": 1047,
     "name": "Iverjabon 70gr",
-    "category": "cuidado",
+    "category": "cuidado animal",
     "description": "Está indicado como coadyuvante en el control de pulgas, garrapatas y piojos en caninos y felinos.",
     "iva": false,
     "price": "3.50"
@@ -370,7 +370,7 @@
   {
     "id": 1048,
     "name": "Ivershampoo cojín",
-    "category": "cuidado",
+    "category": "cuidado animal",
     "description": "Está indicado en el control y tratamiento de pulgas, garrapatas y piojos en caninos y felinos.",
     "iva": false,
     "price": "1.50"
@@ -378,7 +378,7 @@
   {
     "id": 1049,
     "name": "Ivershampoo frasco",
-    "category": "cuidado",
+    "category": "cuidado animal",
     "description": "Está indicado en el control y tratamiento de pulgas, garrapatas y piojos en caninos y felinos.",
     "iva": false,
     "price": "5.00"
@@ -754,7 +754,7 @@
   {
     "id": 1127,
     "name": "Shampoo Cariñoso 250ml",
-    "category": "cuidado",
+    "category": "cuidado animal",
     "description": "Shampoo, rinse, acondicionador perfumado para perros, pelaje, sedoso y brillante.",
     "iva": false,
     "price": "7.00"
@@ -762,7 +762,7 @@
   {
     "id": 1128,
     "name": "Shampoo Cariñoso 60ml",
-    "category": "cuidado",
+    "category": "cuidado animal",
     "description": "Shampoo, rinse, acondicionador perfumado para perros, pelaje, sedoso y brillante.",
     "iva": false,
     "price": "2.00"
@@ -770,7 +770,7 @@
   {
     "id": 1129,
     "name": "Talco Cariñoso frasco",
-    "category": "cuidado",
+    "category": "cuidado animal",
     "description": "Talco medicado.",
     "iva": false,
     "price": "3.50"
@@ -778,7 +778,7 @@
   {
     "id": 1130,
     "name": "Talco Cariñoso sobre",
-    "category": "cuidado",
+    "category": "cuidado animal",
     "description": "Talco medicado.",
     "iva": false,
     "price": "1.00"
@@ -786,7 +786,7 @@
   {
     "id": 1131,
     "name": "Asuntol jabón",
-    "category": "cuidado",
+    "category": "cuidado animal",
     "description": "Está indicado para la limpieza, tratamiento y protección del perro contra pulgas.",
     "iva": false,
     "price": "5.00"
