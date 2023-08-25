@@ -35,7 +35,7 @@ function ProductPage() {
     const findIdx = copyCart.findIndex(element => element.id === actualProduct.id)
 
     if (findIdx === -1) {
-      copyProduct.quantity = 1
+      copyProduct.quantity = quantity
       copyCart.push(copyProduct)
       localStorage.setItem('cart', JSON.stringify(copyCart))
     } else {
@@ -48,6 +48,8 @@ function ProductPage() {
     setQuantity(1)
     setCartState(cartList)
   }
+
+  console.log(quantity)
 
   return (
     <div className='ProductPage'>

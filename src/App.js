@@ -5,13 +5,14 @@ import ShopPage from './routes/ShopPage';
 import ProductPage from './routes/ProductPage';
 import ShopCategoryPage from './routes/ShopCategoryPage';
 import { createContext, useState } from 'react';
+import CartPage from './routes/CartPage';
 
 export const CartContext = createContext([])
 
 function App() {
 
   const cartList = JSON.parse(localStorage.getItem('cart')) || []
-  const [cartState, setCartState] = useState([cartList])
+  const [cartState, setCartState] = useState([...cartList])
 
   return (
     <CartContext.Provider value={{ cartState, setCartState }}>
@@ -27,6 +28,7 @@ function App() {
           <Route path='/alimentacion' element={<ShopCategoryPage category={'alimentacion'} />} />
           <Route path='/cuidado-animal' element={<ShopCategoryPage category={'cuidado animal'} />} />
           <Route path='/producto/:productId' element={<ProductPage />} />
+          <Route path='/carrito' element={<CartPage />} />
         </Routes>
       </HashRouter>
     </CartContext.Provider>

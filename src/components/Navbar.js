@@ -52,10 +52,10 @@ function Navbar() {
           <li><Link to='/'><h4 className='nav-item'>Nosotros</h4></Link></li>
         </ul>
       </div>
-      <button className='cart-box'>
+      <Link to='/carrito' className='cart-box'>
         <div className={hanldeClassCounter}>{cartLength.length}</div>
         <img src={cartIcon} className='cart-icon' />
-      </button>
+      </Link>
     </nav>
   )
 }

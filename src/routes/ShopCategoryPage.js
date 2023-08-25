@@ -105,7 +105,7 @@ function ShopCategoryPage({ category }) {
     }
     setCartState(cartList)
   }
-
+  
   return (
     <div className='ShopCategoryPage'>
       <Navbar />
