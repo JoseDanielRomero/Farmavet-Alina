@@ -60,7 +60,7 @@ function ProductPage() {
         </article>
         <article className='main-product-page-info-container'>
           <h1 className='main-product-page-title'>{actualProduct.name}</h1>
-          <h3 className='main-product-page-price'>$ {actualProduct.price}</h3>
+          <h3 className='main-product-page-price'>$ {actualProduct.price}{actualProduct.iva === true && ' + IVA'}</h3>
           <form className='main-product-page-button-box' onSubmit={handleSubmitButton} >
             <input type='number' className='product-page-quantity-input' onChange={handleChangeInput} value={quantity} min='1' max='5' />
             <button type='submit' className='product-page-add-button' >

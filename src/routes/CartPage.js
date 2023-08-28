@@ -19,6 +19,34 @@ function CartPage() {
 
   },[cartState])
 
+  const cartListWithTaxes = cartUpdated.map(function(product) {
+    if (product.iva === true) {
+      const price = Number(product.price)
+      const priceWithQuantity = price * product.quantity
+      const percentage = Math.floor(priceWithQuantity*12)/100
+      return percentage
+    } else {
+      return 0
+    }
+  })
+
+  const cartListPrices = cartUpdated.map(function(product) {
+    const priceWithQuantity = Number(product.price) * product.quantity
+    return priceWithQuantity
+  })
+
+  const sumArray = (array) => {
+    let total = 0;
+    for (let i=0; i < array.length; i++) {
+      total += array[i] 
+    }
+    if (total === 0) {
+      return '0.00'
+    } else {
+      return total.toFixed(2)
+    }
+  }
+
   if (cartUpdated.length > 0) {
     return (
       <div className='CartPage'>
@@ -70,10 +98,10 @@ function CartPage() {
                   </div>
                 </div>
                 <div className='main-cart-products-box left'>
-                  <Link to={linkTo}><p className='main-cart-products-name'>{product.name}</p></Link>
+                  <Link to={linkTo}><p className='main-cart-products-name hover'>{product.name}</p></Link>
                 </div>
                 <div className='main-cart-products-box center'>
-                  <p className='main-cart-products-name'>${product.price}</p>
+                  <p className='main-cart-products-name'>${product.price}<br></br>{product.iva === true && '+ IVA'}</p>
                 </div>
                 <div className='main-cart-products-box center'>
                   <p className='main-cart-products-name'>{product.quantity}</p>
@@ -84,6 +112,26 @@ function CartPage() {
               </article>
             )
           })}
+          <article className='main-cart-subtotal-container'>
+            <section className='main-cart-subtotal-section'>
+              <div className='main-cart-iva-box'>
+                <h5 className='iva-title'>Iva:</h5>
+                <p className='iva-value'>{sumArray(cartListWithTaxes)}</p>
+              </div>
+              <div className='main-cart-subtotal-box'>
+                <h5 className='subtotal-title'>Subtotal:</h5>
+                <p className='subtotal-value'>{sumArray(cartListPrices)}</p>
+              </div>
+              <div className='main-cart-extra-box'>
+                <p className='extra-phrase'>Los costes de envío se calculan en los próximos pasos.</p>
+              </div>
+            </section>
+            <section className='main-cart-checkout-section'>
+              <button className='main-cart-checkout-button'>
+                <p className='main-cart-checkout-text'>Finalizar compra</p>
+              </button>
+            </section>
+          </article>
         </main>
         <Footer />
       </div>

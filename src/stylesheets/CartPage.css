@@ -29,7 +29,7 @@
 .main-cart-container {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-end;
     justify-content: flex-start;
     padding: 0 6%;
     gap: 4px;
@@ -136,7 +136,7 @@
     line-height: 1.3rem;
 }
 
-.main-cart-products-name:hover {
+.main-cart-products-name.hover:hover {
     color: #0b3fb3;
 }
 
@@ -163,4 +163,112 @@
     font-weight: 500;
     margin: 0;
     margin-top: 10px;
+}
+
+.main-cart-subtotal-container {
+    height: 105px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.main-cart-subtotal-section {
+    height: 100%;
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.main-cart-iva-box, .main-cart-subtotal-box {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iva-title, .subtotal-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    color: #0b3fb3;
+    text-align: left;
+}
+
+.iva-value, .subtotal-value {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    color: #272727;
+    text-align: right;
+}
+
+.main-cart-extra-box {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.extra-phrase {
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    color: #9E9E9E;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.main-cart-checkout-section {
+    height: 100%;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+.main-cart-checkout-button {
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #0b3fb3;
+    border-radius: 7px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.main-cart-checkout-button:hover {
+    cursor: pointer;
+}
+
+.main-cart-checkout-text {
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1rem;
+    text-align: center;
 }
