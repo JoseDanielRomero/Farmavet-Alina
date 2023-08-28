@@ -6,6 +6,7 @@ import ProductPage from './routes/ProductPage';
 import ShopCategoryPage from './routes/ShopCategoryPage';
 import { createContext, useState } from 'react';
 import CartPage from './routes/CartPage';
+import CheckoutPage from './routes/CheckoutPage';
 
 export const CartContext = createContext([])
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/cuidado-animal' element={<ShopCategoryPage category={'cuidado animal'} />} />
           <Route path='/producto/:productId' element={<ProductPage />} />
           <Route path='/carrito' element={<CartPage />} />
+          <Route path='/check-out' element={<CheckoutPage />} />
         </Routes>
       </HashRouter>
     </CartContext.Provider>

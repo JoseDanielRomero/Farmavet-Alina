@@ -47,6 +47,10 @@ function CartPage() {
     }
   }
 
+  const handleClickCheckout = () => {
+    window.location.href = '/#/check-out'
+  }
+
   if (cartUpdated.length > 0) {
     return (
       <div className='CartPage'>
@@ -116,18 +120,18 @@ function CartPage() {
             <section className='main-cart-subtotal-section'>
               <div className='main-cart-iva-box'>
                 <h5 className='iva-title'>Iva:</h5>
-                <p className='iva-value'>{sumArray(cartListWithTaxes)}</p>
+                <p className='iva-value'>$ {sumArray(cartListWithTaxes)}</p>
               </div>
               <div className='main-cart-subtotal-box'>
                 <h5 className='subtotal-title'>Subtotal:</h5>
-                <p className='subtotal-value'>{sumArray(cartListPrices)}</p>
+                <p className='subtotal-value'>$ {sumArray(cartListPrices)}</p>
               </div>
               <div className='main-cart-extra-box'>
-                <p className='extra-phrase'>Los costes de envío se calculan en los próximos pasos.</p>
+                <p className='extra-phrase'>Los costes de envío se calculan en los próximos pasos</p>
               </div>
             </section>
             <section className='main-cart-checkout-section'>
-              <button className='main-cart-checkout-button'>
+              <button className='main-cart-checkout-button' onClick={handleClickCheckout}>
                 <p className='main-cart-checkout-text'>Finalizar compra</p>
               </button>
             </section>

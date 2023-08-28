@@ -1,0 +1,128 @@
+.CheckoutPage {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.main-checkout-container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.main-checkout-form-container, .main-checkout-cart-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-checkout-form-container {
+    width: 55%;
+}
+
+.main-checkout-cart-container {
+    width: 45%;
+    background-color: rgb(241, 241, 241);
+    padding-top: 20px;
+    overflow: scroll;
+}
+
+.main-checkout-cart-box {
+    height: auto;
+    width: 80%;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-checkout-cart-product {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.main-checkout-cart-product-text {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    margin: 0;
+    color: #272727;
+    text-align: left;
+    line-height: 1.3rem;
+}
+
+.main-checkout-cart-product-text.name {
+    width: 80%;
+    text-align: left;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+.main-checkout-cart-product-text.price {
+    width: 20%;
+    text-align: right;
+    font-weight: 500;
+}
+
+.checkout-divider {
+    height: 1.5px;
+    width: 80%;
+    margin: 0;
+    margin-right: 5%;
+    border-width: 0;
+    color:#272727;
+    background: rgba(86, 178, 128, 0.20);
+}
+
+.main-checkout-cart-product-text.item {
+    width: 40%;
+    text-align: left;
+    font-weight: 500;
+}
+
+.main-checkout-cart-product-text.item-price {
+    width: 60%;
+    text-align: right;
+    font-weight: 500;
+}
+
+.main-checkout-cart-product-text.shipping {
+    width: 60%;
+    text-align: right;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.main-checkout-cart-total-box {
+    height: 50px;
+    width: 80%;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.main-checkout-cart-product-text.total-price {
+    width: 60%;
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #0b3fb3;
+}
