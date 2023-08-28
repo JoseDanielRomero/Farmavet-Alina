@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { CartContext } from '../App';
+import { CartContext, TempCheckoutContext } from '../App';
 import Navbar from '../components/Navbar';
 import '../stylesheets/CartPage.css'
 import closeIcon from '../images/close.png'
@@ -11,6 +11,7 @@ function CartPage() {
 
   const { cartState, setCartState } = useContext(CartContext)
   const [cartUpdated, setCartUpdated] = useState([])
+  const { setTempCheckout } = useContext(TempCheckoutContext)
 
   useEffect(()=>{
 
@@ -48,6 +49,7 @@ function CartPage() {
   }
 
   const handleClickCheckout = () => {
+    setTempCheckout(true)
     window.location.href = '/#/check-out'
   }
 
