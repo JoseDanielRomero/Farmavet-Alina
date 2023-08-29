@@ -1,16 +1,17 @@
 import { useContext, useEffect, useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import { CartContext, TempCheckoutContext } from '../App';
+import { CartContext, OrderConfirmedContext, TempCheckoutContext } from '../App';
 import '../stylesheets/CheckoutPage.css'
 import logo from '../images/logo-simple.png'
 import { Formik, Form, Field } from 'formik';
 
 function CheckoutPage() {
 
-  const { cartState, setCartState } = useContext(CartContext)
+  const { cartState } = useContext(CartContext)
   const [cartUpdated, setCartUpdated] = useState([])
   const [shippingInfo, setShippingInfo] = useState([])
   const { tempCheckout, setTempCheckout } = useContext(TempCheckoutContext)
+  const { setOrderConfirmation } = useContext(OrderConfirmedContext)
 
   useEffect(()=>{
 
@@ -59,8 +60,9 @@ function CheckoutPage() {
   const handleSubmitCard = (values, {resetForm}) => {
     resetForm({ values: '' })
     setShippingInfo([])
+    setOrderConfirmation(true)
     localStorage.removeItem('cart');
-    window.location.href = '/#/'
+    window.location.href = '/#/confirmacion'
   }
 
   const handleShippingPhrase = shippingInfo.length === 0 ? 'Será calculado en el próximo paso' : 'Envío gratis'
@@ -136,7 +138,7 @@ function CheckoutPage() {
                   <div className='main-checkout-form-section button-section'>
                     <Link to='/carrito' className='form-checkout-link'>Regresar al carrito</Link>
                     <button type='submit' className='form-checkout-button'>
-                      <p className='main-cart-checkout-text'>Proceder a pagar</p>
+                      <p className='main-cart-checkout-text'>Finalizar la compra</p>
                     </button>
                   </div>
                 </Form>
