@@ -7,7 +7,7 @@
 }
 
 .header-homepage {
-    height: 70vh;
+    height: 520px;
     width: 100%;
     background-image: url('../images/bg-desktop.png');
     background-size: cover;
@@ -49,4 +49,103 @@
     color: #1D252C;
     text-align: center;
     line-height: 1.4rem;
+}
+
+.main-homepage-container {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-homepage-best-products-box {
+    height: 470px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 6%;
+    margin-bottom: 20px;
+}
+
+.main-homepage-best-products-title {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 500;
+    color: #1D252C;
+    line-height: 2.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-homepage-features-container {
+    height: 300px;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-homepage-features-box {
+    height: auto;
+    width: 100%;
+    padding: 0 6%;
+    display: grid;
+    grid-template-columns: 17% 17% 17% 17%;
+    grid-template-rows: 200px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-homepage-single-feature-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+}
+
+.feature-image-box {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.feature-image {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.feature-text-box {
+    height: 50px;
+    width: 100%;
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feature-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    color: #1D252C;
+    text-align: center;
 }
