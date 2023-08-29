@@ -49,8 +49,6 @@ function ProductPage() {
     setCartState(cartList)
   }
 
-  console.log(quantity)
-
   return (
     <div className='ProductPage'>
       <Navbar />
