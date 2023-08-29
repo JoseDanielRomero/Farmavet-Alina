@@ -51,10 +51,19 @@ function CheckoutPage() {
     setTempCheckout(false)
   }
 
-  const handleSubmit = (values, {resetForm}) => {
-    setShippingInfo(values)
+  const handleSubmitShipping = (values, {resetForm}) => {
+    setShippingInfo([values])
     resetForm({ values: '' })
   }
+
+  const handleSubmitCard = (values, {resetForm}) => {
+    resetForm({ values: '' })
+    setShippingInfo([])
+    localStorage.removeItem('cart');
+    window.location.href = '/#/'
+  }
+
+  const handleShippingPhrase = shippingInfo.length === 0 ? 'Será calculado en el próximo paso' : 'Envío gratis'
 
   if (tempCheckout) {
     return (
@@ -78,7 +87,7 @@ function CheckoutPage() {
                 email:'',
                 phone:''
               }}
-              onSubmit={ handleSubmit }
+              onSubmit={ handleSubmitShipping }
               >
                 <Form className='main-checkout-form-box'>
                   <div className='header-checkout-form-box'>
@@ -95,7 +104,35 @@ function CheckoutPage() {
                   </div>
                   <Field name='address' type='text' placeholder='Dirección' className='form-field complete' autoComplete='off' required />
                   <Field name='email' type='email' placeholder='Correo electrónico' className='form-field complete' autoComplete='off' required />
-                  <Field name='phone' type='tel' placeholder='Teléfono' className='form-field complete' autoComplete='off' required />
+                  <Field name='phone' type='tel' maxLength='10' placeholder='Teléfono' className='form-field complete' autoComplete='off' required />
+                  <div className='main-checkout-form-section button-section'>
+                    <Link to='/carrito' className='form-checkout-link'>Regresar al carrito</Link>
+                    <button type='submit' className='form-checkout-button'>
+                      <p className='main-cart-checkout-text'>Proceder a pagar</p>
+                    </button>
+                  </div>
+                </Form>
+              </Formik>
+            }
+            {shippingInfo.length > 0 &&
+              <Formik initialValues={{
+                cardNumber:'',
+                holderName:'',
+                expiration:'',
+                cvv:''
+              }}
+              onSubmit={ handleSubmitCard }
+              >
+                <Form className='main-checkout-form-box'>
+                  <div className='header-checkout-form-box'>
+                    <h3 className='header-checkout-form-title'>Método de pago</h3>
+                  </div>
+                  <Field name='cardNumber' type='tel' maxLength='18' placeholder='Número de tarjeta' className='form-field complete' autoComplete='off' required />
+                  <Field name='holderName' type='text' placeholder='Titular de tarjeta' className='form-field complete' autoComplete='off' required />
+                  <div className='main-checkout-form-section'>
+                    <Field name='expiration' type='tel' maxLength='5' placeholder='Expiración' className='form-field half' autoComplete='off' required />
+                    <Field name='cvv' type='password' maxLength='3' placeholder='CVV' className='form-field half' autoComplete='off' required />
+                  </div>
                   <div className='main-checkout-form-section button-section'>
                     <Link to='/carrito' className='form-checkout-link'>Regresar al carrito</Link>
                     <button type='submit' className='form-checkout-button'>
@@ -127,7 +164,7 @@ function CheckoutPage() {
               </div>
               <div className='main-checkout-cart-product'>
                 <p className='main-checkout-cart-product-text item'>Envío:</p>
-                <p className='main-checkout-cart-product-text shipping'>Será calculado en el próximo paso</p>
+                <p className='main-checkout-cart-product-text shipping'>{handleShippingPhrase}</p>
               </div>
             </section>
             <hr className='checkout-divider' />
