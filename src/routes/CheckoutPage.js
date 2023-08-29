@@ -3,12 +3,14 @@ import { Link, Navigate } from 'react-router-dom';
 import { CartContext, TempCheckoutContext } from '../App';
 import '../stylesheets/CheckoutPage.css'
 import logo from '../images/logo-simple.png'
+import { Formik, Form, Field } from 'formik';
 
 function CheckoutPage() {
 
   const { cartState, setCartState } = useContext(CartContext)
   const [cartUpdated, setCartUpdated] = useState([])
-  const { tempCheckout } = useContext(TempCheckoutContext)
+  const [shippingInfo, setShippingInfo] = useState([])
+  const { tempCheckout, setTempCheckout } = useContext(TempCheckoutContext)
 
   useEffect(()=>{
 
@@ -45,15 +47,64 @@ function CheckoutPage() {
     }
   }
 
+  const cancelCheckout = () => {
+    setTempCheckout(false)
+  }
+
+  const handleSubmit = (values, {resetForm}) => {
+    setShippingInfo(values)
+    resetForm({ values: '' })
+  }
+
   if (tempCheckout) {
     return (
       <div className='CheckoutPage'>
         <main className='main-checkout-container'>
           <article className='main-checkout-form-container'>
-            <Link to='/' className='logo-checkout-box'>
-              <img className='logo-checkout-image' src={logo} />
-              <h3 className='logo-checkout-text'>Farmacia Veterinaria Alina</h3>
-            </Link>
+            <section className='header-checkout-form'>
+              <Link to='/' className='logo-checkout-box' onClick={cancelCheckout}>
+                <img className='logo-checkout-image' src={logo} />
+                <h3 className='logo-checkout-text'>Farmacia Veterinaria Alina</h3>
+              </Link>
+            </section>
+            {shippingInfo.length === 0 &&
+              <Formik initialValues={{
+                name:'',
+                lastName:'',
+                country:'Ecuador',
+                province:'',
+                city:'',
+                address:'',
+                email:'',
+                phone:''
+              }}
+              onSubmit={ handleSubmit }
+              >
+                <Form className='main-checkout-form-box'>
+                  <div className='header-checkout-form-box'>
+                    <h3 className='header-checkout-form-title'>Datos de envío</h3>
+                  </div>
+                  <div className='main-checkout-form-section'>
+                    <Field name='name' type='text' placeholder='Nombre' className='form-field half' autoComplete='off' required />
+                    <Field name='lastName' type='text' placeholder='Apellido' className='form-field half' autoComplete='off' required />
+                  </div>
+                  <div className='main-checkout-form-section'>
+                    <Field name='country' type='text' placeholder='País/región' className='form-field one-third' autoComplete='off' required readOnly />
+                    <Field name='province' type='text' placeholder='Provincia' className='form-field one-third' autoComplete='off' required />
+                    <Field name='city' type='text' placeholder='Ciudad' className='form-field one-third' autoComplete='off' required />
+                  </div>
+                  <Field name='address' type='text' placeholder='Dirección' className='form-field complete' autoComplete='off' required />
+                  <Field name='email' type='email' placeholder='Correo electrónico' className='form-field complete' autoComplete='off' required />
+                  <Field name='phone' type='tel' placeholder='Teléfono' className='form-field complete' autoComplete='off' required />
+                  <div className='main-checkout-form-section button-section'>
+                    <Link to='/carrito' className='form-checkout-link'>Regresar al carrito</Link>
+                    <button type='submit' className='form-checkout-button'>
+                      <p className='main-cart-checkout-text'>Proceder a pagar</p>
+                    </button>
+                  </div>
+                </Form>
+              </Formik>
+            }
           </article>
           <article className='main-checkout-cart-container'>
             <section className='main-checkout-cart-box'>
