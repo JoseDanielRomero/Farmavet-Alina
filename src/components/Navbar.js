@@ -49,7 +49,7 @@ function Navbar() {
             </div>
           </li>
           <li><Link to='/marcas'><h4 className='nav-item'>Marcas</h4></Link></li>
-          <li><Link to='/'><h4 className='nav-item'>Nosotros</h4></Link></li>
+          <li><Link to='/nosotros'><h4 className='nav-item'>Nosotros</h4></Link></li>
         </ul>
       </div>
       <Link to='/carrito' className='cart-box'>

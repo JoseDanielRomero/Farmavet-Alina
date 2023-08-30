@@ -8,6 +8,7 @@ import CartPage from './routes/CartPage';
 import CheckoutPage from './routes/CheckoutPage';
 import PaymentConfirmation from './routes/PaymentConfirmation';
 import BrandsPage from './routes/BrandsPage';
+import AboutUsPage from './routes/AboutUsPage';
 
 export const CartContext = createContext([])
 export const TempCheckoutContext = createContext(false)
@@ -40,6 +41,7 @@ function App() {
               <Route path='/check-out' element={<CheckoutPage />} />
               <Route path='/confirmacion' element={<PaymentConfirmation />} />
               <Route path='/marcas' element={<BrandsPage />} />
+              <Route path='/nosotros' element={<AboutUsPage />} />
             </Routes>
           </HashRouter>
         </CartContext.Provider>

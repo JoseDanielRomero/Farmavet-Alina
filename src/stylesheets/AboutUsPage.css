@@ -1,0 +1,98 @@
+.AboutUsPage {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.header-about-us {
+    height: 520px;
+    width: 100%;
+    background-image: url('../images/bg-pharmacy-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-about-us-text-box {
+    height: 50%;
+    width: 50%;
+    background-color: #f8cf39e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    padding: 0 5%;
+}
+
+.header-about-us-title {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    color: #1D252C;
+    line-height: 2.2rem;
+    text-align: center;
+}
+
+.header-about-us-subtitle {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    color: #1D252C;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+.main-about-us-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-about-us-medic-text-box {
+    height: 300px;
+    width: 100%;
+    background-image: url('../images/bg-pets-desktop.png');
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 2% 6%;
+}
+
+.main-about-us-medic-title {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #1D252C;
+    line-height: 2.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: .1rem;
+}
+
+.main-about-us-medic-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    color: #0b3fb3;
+}
