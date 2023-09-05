@@ -58,7 +58,7 @@ function CartPage() {
 
   const handleClickCheckout = () => {
     setTempCheckout(true)
-    window.location.href = '/#/check-out'
+    window.location.href = '/Farmavet-Alina/#/check-out'
   }
 
   if (cartUpdated.length > 0) {
