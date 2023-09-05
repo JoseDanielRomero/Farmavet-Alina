@@ -6,7 +6,7 @@ import { useContext, useState } from 'react';
 import cartIcon from '../images/shopping-cart-2.png'
 import plusIcon from '../images/plus.png'
 import Footer from '../components/Footer';
-import { CartContext } from '../App';
+import { CartContext, MenuStatusContext } from '../App';
 
 function ProductPage() {
 
@@ -49,8 +49,16 @@ function ProductPage() {
     setCartState(cartList)
   }
 
+  const { menuState, setMenuState } = useContext(MenuStatusContext)
+
+  const handleMenuStatus = () => {
+    if (menuState === true) {
+      setMenuState(false)
+    }
+  }
+
   return (
-    <div className='ProductPage'>
+    <div className='ProductPage' onClick={handleMenuStatus}>
       <Navbar />
       <main className='main-product-page-container'>
         <article className='main-product-page-image-box'>

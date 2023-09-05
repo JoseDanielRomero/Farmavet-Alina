@@ -10,7 +10,7 @@ import rightArrow from '../images/right-arrow.png'
 import Footer from '../components/Footer';
 import cartIcon from '../images/shopping-cart-2.png'
 import plusIcon from '../images/plus.png'
-import { CartContext } from '../App';
+import { CartContext, MenuStatusContext } from '../App';
 
 function ShopPage() {
 
@@ -92,8 +92,16 @@ function ShopPage() {
     setCartState(cartList)
   }
 
+  const { menuState, setMenuState } = useContext(MenuStatusContext)
+
+  const handleMenuStatus = () => {
+    if (menuState === true) {
+      setMenuState(false)
+    }
+  }
+
   return (
-    <div className='ShopPage'>
+    <div className='ShopPage' onClick={handleMenuStatus}>
       <Navbar />
       <HeaderShop title={'Tienda'} />
       <main className='main-shop'>

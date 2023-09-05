@@ -13,6 +13,7 @@ import AboutUsPage from './routes/AboutUsPage';
 export const CartContext = createContext([])
 export const TempCheckoutContext = createContext(false)
 export const OrderConfirmedContext = createContext(false)
+export const MenuStatusContext = createContext(false)
 
 function App() {
 
@@ -20,11 +21,13 @@ function App() {
   const [cartState, setCartState] = useState([...cartList])
   const [tempCheckout, setTempCheckout] = useState(false)
   const [orderConfirmation, setOrderConfirmation] = useState(false)
+  const [menuState, setMenuState] = useState(false)
 
   return (
     <OrderConfirmedContext.Provider value={{ orderConfirmation, setOrderConfirmation }}>
       <TempCheckoutContext.Provider value={{ tempCheckout, setTempCheckout }}>
         <CartContext.Provider value={{ cartState, setCartState }}>
+          <MenuStatusContext.Provider value={{ menuState, setMenuState }}>
           <HashRouter>
             <Routes>
               <Route path='/' element={<Homepage />} />
@@ -44,6 +47,7 @@ function App() {
               <Route path='/nosotros' element={<AboutUsPage />} />
             </Routes>
           </HashRouter>
+          </MenuStatusContext.Provider>
         </CartContext.Provider>
       </TempCheckoutContext.Provider>
     </OrderConfirmedContext.Provider>

@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { CartContext, TempCheckoutContext } from '../App';
+import { CartContext, MenuStatusContext, TempCheckoutContext } from '../App';
 import Navbar from '../components/Navbar';
 import '../stylesheets/CartPage.css'
 import closeIcon from '../images/close.png'
@@ -8,6 +8,14 @@ import Footer from '../components/Footer';
 import notFoundImage from '../images/not-found-image.png'
 
 function CartPage() {
+
+  const { menuState, setMenuState } = useContext(MenuStatusContext)
+
+  const handleMenuStatus = () => {
+    if (menuState === true) {
+      setMenuState(false)
+    }
+  }
 
   const { cartState, setCartState } = useContext(CartContext)
   const [cartUpdated, setCartUpdated] = useState([])
@@ -55,7 +63,7 @@ function CartPage() {
 
   if (cartUpdated.length > 0) {
     return (
-      <div className='CartPage'>
+      <div className='CartPage' onClick={handleMenuStatus}>
         <Navbar />
         <header className='header-cart-container'>
           <h1 className='header-cart-title'>Tú carrito</h1>
@@ -144,7 +152,7 @@ function CartPage() {
     )
   } else {
     return (
-      <div className='CartPage'>
+      <div className='CartPage' onClick={handleMenuStatus}>
         <Navbar />
         <header className='header-cart-container'>
           <h1 className='header-cart-title'>Tú carrito</h1>

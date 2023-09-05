@@ -6,7 +6,7 @@ import ProductCard from '../components/ProductCard';
 import cartIcon from '../images/shopping-cart-2.png'
 import plusIcon from '../images/plus.png'
 import { useContext } from 'react';
-import { CartContext } from '../App';
+import { CartContext, MenuStatusContext } from '../App';
 import storeIcon from '../images/store.png'
 import bagIcon from '../images/bag.png'
 import deliverIcon from '../images/deliver.png'
@@ -17,6 +17,7 @@ import Footer from '../components/Footer';
 function Homepage() {
 
   const { cartState, setCartState } = useContext(CartContext)
+  const { menuState, setMenuState } = useContext(MenuStatusContext)
 
   const bestProductsDatabase = () => {
     const database = [...data]
@@ -44,8 +45,14 @@ function Homepage() {
     setCartState(cartList)
   }
 
+  const handleMenuStatus = () => {
+    if (menuState === true) {
+      setMenuState(false)
+    }
+  }
+
   return (
-    <div className='Homepage'>
+    <div className='Homepage' onClick={handleMenuStatus} >
       <Navbar />
       <header className='header-homepage'>
         <div className='header-text-box'>

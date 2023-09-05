@@ -1,10 +1,21 @@
+import { useContext } from 'react';
+import { MenuStatusContext } from '../App';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import '../stylesheets/AboutUsPage.css'
 
 function AboutUsPage() {
+
+  const { menuState, setMenuState } = useContext(MenuStatusContext)
+
+  const handleMenuStatus = () => {
+    if (menuState === true) {
+      setMenuState(false)
+    }
+  }
+
   return (
-    <div className='AboutUsPage'>
+    <div className='AboutUsPage' onClick={handleMenuStatus} >
       <Navbar />
       <header className='header-about-us'>
         <div className='header-about-us-text-box'>

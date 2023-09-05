@@ -36,6 +36,7 @@
     font-weight: 500;
     margin: 0;
     color: #0b3fb3;
+    line-height: 1.4rem;
 }
 
 .nav-items-box {
@@ -132,6 +133,14 @@
     position: absolute;
 }
 
+.menu-mobile-icon {
+    display: none;
+}
+
+.nav-item-mobile-box {
+    display: none;
+}
+
 .cart-box {
     border: none;
     background-color: transparent;
@@ -184,14 +193,127 @@
     margin: 0;
 }
 
+
 @media screen and (max-width: 900px) {
 
+    .navbar-container {
+        gap: 30px;
+    }
+
+    .logo-box {
+        gap: 4px;
+        order: 2;
+    }
+
+    .cart-box {
+        order: 3;
+    }
+
+    .nav-item.shop, .nav-item {
+        display: none;
+    }
+
+    .nav-item.mini {
+        display: flex;
+    }
+
+    .menu-mobile-icon {
+        display: flex;
+        height: 25px;
+        z-index: 800;
+    }
+
+    .menu-mobile-icon:hover {
+        cursor: pointer;
+        filter: invert(19%) sepia(92%) saturate(2394%) hue-rotate(214deg) brightness(66%) contrast(98%);
+    }
+
+    li {
+        display: none;
+    }
+
+    .mobile-list {
+        display: flex;
+    }
+
+    .shop-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-items-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        order: 1;
+        width: auto;
+    }
+
     .nav-item-shop-box {
-        overflow: scroll;
+        display: none;
+    }
+
+    .shop-box:hover .nav-item-shop-box {
+        display: none;
+        opacity: 0;
+    }
+
+    .nav-item-mobile-box {
+        height: 50vh;
+        width: 100vw;
+        left: 0;
+        background-color: rgb(241, 241, 241);
+        position: absolute;
+        transform: translate(9999px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #cbcbcb;
+        margin-top: 60vh;
+    }
+
+    .nav-item-mobile-box.hidden {
+        opacity: 0;
+    }
+
+    .nav-item-mobile-box.show {
+        display: flex;
+        transition: opacity .1s linear;  
+        transform:translate(0);
+        opacity: 1;
     }
 
     .nav-items-list-shop {
-        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3% 6%;
+        margin: 0;
+        gap: 1px;
+        position: absolute;
+    }
+
+    .nav-item-mobile {
+        height: 100%;
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        color: #272727;
+        margin: 0;
+        font-weight: 400;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: .9rem;
+    }
+
+    .nav-item-mobile.title {
+        font-weight: 500;
+        font-size: 1rem;
     }
 
 }

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import { CartContext, OrderConfirmedContext, TempCheckoutContext } from '../App';
+import { CartContext, MenuStatusContext, OrderConfirmedContext, TempCheckoutContext } from '../App';
 import '../stylesheets/CheckoutPage.css'
 import logo from '../images/logo-simple.png'
 import { Formik, Form, Field } from 'formik';
@@ -67,9 +67,17 @@ function CheckoutPage() {
 
   const handleShippingPhrase = shippingInfo.length === 0 ? 'Será calculado en el próximo paso' : 'Envío gratis'
 
+  const { menuState, setMenuState } = useContext(MenuStatusContext)
+
+  const handleMenuStatus = () => {
+    if (menuState === true) {
+      setMenuState(false)
+    }
+  }
+
   if (tempCheckout) {
     return (
-      <div className='CheckoutPage'>
+      <div className='CheckoutPage' onClick={handleMenuStatus}>
         <main className='main-checkout-container'>
           <article className='main-checkout-form-container'>
             <section className='header-checkout-form'>
