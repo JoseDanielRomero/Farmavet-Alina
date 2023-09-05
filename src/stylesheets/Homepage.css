@@ -184,3 +184,29 @@
 .header-subtitle.attention {
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 900px) {
+
+    .header-text-box {
+        height: 60%;
+        width: 88%;
+    }
+
+    .main-homepage-best-products-box {
+        height: auto;
+    }
+
+    .main-homepage-attention-container {
+        flex-direction: column;
+    }
+
+    .main-homepage-attention-image-box, .main-homepage-attention-text-box {
+        height: 50%;
+        width: 100%;
+    }
+
+    .main-homepage-attention-text-box {
+        padding: 2% 6%;
+    }
+
+}

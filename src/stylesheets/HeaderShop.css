@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding: 0 6%;
 }
 
 .header-shop-title {
@@ -24,4 +25,20 @@
 
 .header-shop-image {
     max-height: 70%;
+}
+
+@media screen and (max-width: 900px) {
+
+    .header-shop {
+        height: 20vh;
+    }
+
+    .header-shop-image {
+        max-height: 60%;
+    }
+
+    .header-shop-title {
+        font-size: 1.8rem;
+    }
+
 }

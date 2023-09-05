@@ -79,7 +79,7 @@ function CartPage() {
               <h4 className='main-cart-column-title'>Precio</h4>
             </div>
             <div className='main-cart-column-title-box center'>
-              <h4 className='main-cart-column-title'>Cantidad</h4>
+              <h4 className='main-cart-column-title quantity'>Cantidad</h4>
             </div>
             <div className='main-cart-column-title-box center'>
               <h4 className='main-cart-column-title'>Total</h4>

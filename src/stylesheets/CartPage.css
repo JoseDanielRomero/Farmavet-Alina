@@ -272,3 +272,37 @@
     line-height: 1rem;
     text-align: center;
 }
+
+@media screen and (max-width: 900px) {
+
+    .main-cart-column-title-container {
+        padding: 0 4%;  
+    }
+
+    .main-cart-products-container {
+        padding: 0 4%;
+    }
+
+    .main-cart-column-title.quantity {
+        display: none;
+    }
+
+    .main-cart-products-name {
+        font-size: .9rem;
+    }
+
+    .main-cart-subtotal-container {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .main-cart-subtotal-section, .main-cart-checkout-section {
+        height: 50%;
+        width: 100%;
+    }
+
+
+}

@@ -259,3 +259,31 @@
 .form-checkout-button:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+
+    .header-checkout-form {
+        margin: 0;
+    }
+
+    .main-checkout-form-container {
+        width: 100%;
+    }
+
+    .main-checkout-cart-container {
+        display: none;
+    }
+
+    .main-checkout-form-box {
+        margin: 0;
+    }
+
+    .form-checkout-button {
+        height: 55px;
+    }
+
+    .form-checkout-link {
+        width: 40%;
+    }
+
+}

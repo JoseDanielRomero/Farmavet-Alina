@@ -32,3 +32,11 @@
     margin-top: 10px;
     text-align: center;
 }
+
+@media screen and (max-width: 900px) {
+
+    .main-confirmation-image {
+        width: 150px;
+    }
+
+}

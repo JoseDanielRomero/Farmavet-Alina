@@ -130,3 +130,11 @@
     max-height: 50%;
     max-width: 50%;
 }
+
+@media screen and (max-width: 900px) {
+
+    .main-shop-products-container {
+        grid-template-columns: 46.5% 46.5%;
+    }
+
+}

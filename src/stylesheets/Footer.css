@@ -29,3 +29,15 @@
     color: rgb(128, 128, 128);
     text-align: center;
 }
+
+@media screen and (max-width: 900px) {
+
+    .Footer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        padding: 0 6%;
+        padding-bottom: 3%;
+    }
+    
+}
