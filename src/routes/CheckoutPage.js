@@ -62,7 +62,7 @@ function CheckoutPage() {
     setShippingInfo([])
     setOrderConfirmation(true)
     localStorage.removeItem('cart');
-    window.location.href = '/#/confirmacion'
+    window.location.href = '/Farmavet-Alina/#/confirmacion'
   }
 
   const handleShippingPhrase = shippingInfo.length === 0 ? 'Será calculado en el próximo paso' : 'Envío gratis'
