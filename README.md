@@ -17,7 +17,7 @@ Online store of a local Veterinary Pharmacy in Babahoyo, Ecuador.
 
 </div>
 
-## 💻 Tecnologias Usadas
+## 💻 Tech
 
 <img src="https://skillicons.dev/icons?i=react,javascript,html,css"></img>
 
