@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Farmavet-Alina/static/css/main.8ef8591a.css",
+    "main.css": "/Farmavet-Alina/static/css/main.a6b9018a.css",
     "main.js": "/Farmavet-Alina/static/js/main.173e8cb7.js",
-    "static/media/bg-desktop.png": "/Farmavet-Alina/static/media/bg-desktop.d16943515f48e8cbbeff.png",
+    "static/media/bg-desktop.png": "/Farmavet-Alina/static/media/bg-desktop.29803fd1ee5cfd37b0ed.png",
     "static/media/bg-dog-desktop.png": "/Farmavet-Alina/static/media/bg-dog-desktop.18047ffc1ef09871e332.png",
     "static/media/not-found-image.png": "/Farmavet-Alina/static/media/not-found-image.17b1ef19280ebdd3f421.png",
     "static/media/bg-pharmacy-desktop.png": "/Farmavet-Alina/static/media/bg-pharmacy-desktop.261028ce236643bb1fca.png",
@@ -116,11 +116,11 @@
     "static/media/check.png": "/Farmavet-Alina/static/media/check.e2a029462fdc3a3da5d6.png",
     "static/media/whatsapp.png": "/Farmavet-Alina/static/media/whatsapp.dd56035d882b65a23526.png",
     "index.html": "/Farmavet-Alina/index.html",
-    "main.8ef8591a.css.map": "/Farmavet-Alina/static/css/main.8ef8591a.css.map",
+    "main.a6b9018a.css.map": "/Farmavet-Alina/static/css/main.a6b9018a.css.map",
     "main.173e8cb7.js.map": "/Farmavet-Alina/static/js/main.173e8cb7.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ef8591a.css",
+    "static/css/main.a6b9018a.css",
     "static/js/main.173e8cb7.js"
   ]
 }
