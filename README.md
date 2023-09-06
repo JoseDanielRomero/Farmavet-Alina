@@ -30,7 +30,6 @@ Users can:
 
 - Browse through the different product categories, or simply click on 'Tienda' to view all available products.
 - Filter products by price.
-- Navigate between pages.
 - See detailed product information by clicking on the product card. Here you will see a larger image and a description of the product.
 - In the 'Carrito' tab, you could visualize a shopping cart summary that includes the following information:
   - Product image.
