@@ -10,7 +10,7 @@ Online store of a local Veterinary Pharmacy in Babahoyo, Ecuador.
 
 <div align='center'>
 
-<img src="https://i.ibb.co/3rbnFrx/Captura-de-pantalla-2023-09-05-a-la-s-11-12-27.png" style="width: 100%"  />
+<img src="https://i.ibb.co/LRqFP4N/Captura-de-pantalla-2023-09-08-a-la-s-14-17-21.png" style="width: 100%"  />
 <img src="https://i.ibb.co/vjvBSqP/Captura-de-pantalla-2023-09-05-a-la-s-11-15-58.png" style="width: 100%"  />
 <img src="https://i.ibb.co/85j4TH4/Captura-de-pantalla-2023-09-05-a-la-s-11-14-41.png" style="width: 45%"  />
 <img src="https://i.ibb.co/XC6nLrr/Captura-de-pantalla-2023-09-05-a-la-s-11-17-57.png" style="width: 45%"  />
